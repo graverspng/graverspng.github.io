@@ -1,0 +1,187 @@
+html {
+    --marginer: 80px;
+}
+
+
+html[data-theme="light"] {
+    --background: rgb(240,237,212);
+    --krasa: rgb(236,205,180);
+    --triis: rgb(249,251,231);
+    --trepsis: black;
+    --picture: 1;
+    --picture2: 0;
+}
+
+
+html[data-theme="dark"] {
+    --background: rgb(29,38,125);
+    --krasa: rgb(92,70,156);
+    --triis: rgb(12, 17, 79);
+    --trepsis: white;
+    --picture: 0;
+    --picture2: 1;
+}
+
+.teksts {
+    text-decoration: none;
+    color: var(--trepsis);
+    transition: color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.teksts:hover {
+    color: var(--triis);
+}
+
+#toggle-theme {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    opacity: 0;
+    z-index: 7;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+.moonAUS {
+    opacity: var(--picture2);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 6;
+    height: 80px;
+    width: 80px;
+}
+
+.sunAUS {
+    opacity: var(--picture);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 6;
+    height: 80px;
+    width: 80px;
+}
+
+button {
+    background-color: var(--krasa);
+    border-radius: 12px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    color: var(--trepsis);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+p , label {
+    color: var(--trepsis);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: var(--krasa);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:var(--background);
+}
+
+main {
+    margin-top: var(--marginer);
+}
+
+header {
+    width: 100vw;
+    height: var(--marginer);
+    background-color:var(--krasa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3, 80px);
+}
+
+.AUST {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+}
+
+.ROMA {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+    
+}
+
+.LIEP {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+}
+
+.INDO {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    transition: transform 0.9s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+

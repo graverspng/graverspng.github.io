@@ -1,0 +1,226 @@
+html {
+    --marginer: 80px;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+}
+
+
+html[data-theme="light"] {
+    --background: rgb(240,237,212);
+    --krasa: rgb(236,205,180);
+    --triis: rgb(249,251,231);
+    --trepsis: black;
+    --picture: 1;
+    --picture2: 0;
+}
+
+.teksts {
+    text-decoration: none;
+    color: var(--trepsis);
+    transition: color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.teksts:hover {
+    color: var(--triis);
+}
+
+
+html[data-theme="dark"] {
+    --background: rgb(29,38,125);
+    --krasa: rgb(92,70,156);
+    --triis: rgb(12, 17, 79);
+    --trepsis: white;
+    --picture: 0;
+    --picture2: 1;
+}
+
+
+#toggle-theme {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    opacity: 0;
+    z-index: 7;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+
+.moonAUS {
+    opacity: var(--picture2);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 6;
+    height: 80px;
+    width: 80px;
+}
+
+.sunAUS {
+    opacity: var(--picture);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 6;
+    height: 80px;
+    width: 80px;
+}
+
+button {
+    background-color: var(--krasa);
+    border-radius: 12px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    color: var(--trepsis);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+p , label {
+    color: var(--trepsis);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: var(--krasa);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color:var(--background);
+}
+
+main {
+    margin-top: var(--marginer);
+}
+
+header {
+    width: 100vw;
+    height: var(--marginer);
+    background-color:var(--krasa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3, 80px);
+
+}
+
+.AUST {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+    transition: transform 0.6s;
+}
+
+.AUST:hover {
+    transform: scale(1.1);
+}
+
+.ROMA {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+    transition: transform 0.6s;
+}
+
+.ROMA:hover {
+    transform: scale(1.1);
+}
+
+.LIEP {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+    transition: transform 0.6s;
+}
+
+.LIEP:hover {
+    transform: scale(1.1);
+}
+
+.INDO {
+    display: flex;
+    background-color: var(--triis);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 300px;
+    transition: transform 0.6s;
+}
+
+.INDO:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    transition: transform 0.9s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+input[type=radio] {
+    position: absolute;
+    width: 300px;
+    height: 85px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-margin-top: 30px;
+}
+
+
+

@@ -1,0 +1,63 @@
+header {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+a:hover {
+    color: powderblue;
+}
+
+.klasee , .klasee2 {
+    text-align: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+main {
+    margin-top: 80px;
+}
+
+.teksts {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    background-image: linear-gradient(to right, blue , cyan);
+}
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+.sakums:hover {
+    transform: translate(4px);
+}
+
+button {
+    margin: auto;
+    border-radius: 6px;
+    border-color: black;
+    height: 30px;
+    background-color: white;
+}
+
+.linkcolor {
+    color: blue;
+}
+
+h1, h2 , P {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+

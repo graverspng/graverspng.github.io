@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="lv" data-theme="light" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <center><h2><a class="teksts" href="index.html">Atpakal uz Sākumu!</a></h2></center>
+        <input type="checkbox" id="toggle-theme"/>
+        <img class="sunAUS" src="sun.svg"></img>
+        <img class="moonAUS"src="moon.svg"></img>
+    </header>
+    <main>
+
+        <center><h1>Uz kuriem galamērķiem piedāvājam ceļojumus?</h1></center>
+
+<div class="container">
+
+    
+    <div class="AUST">
+    <input type="checkbox"id="Australija"name="australija">
+    <label for="Australija">Australija</label>
+    
+</div>
+
+<div class="ROMA">
+    <input type="checkbox"id="Roma"name="roma">
+    <label for="Roma">Roma</label>
+</div>
+
+<div class="INDO">
+    <input type="checkbox"id="Indonēzija"name="indonēzija">
+    <label for="Indonēzija">Indonēzija</label>
+</div>
+
+<div class="LIEP">
+    <input type="checkbox"id="Liepāja"name="liepāja">
+    <label for="Liepāja">Liepāja</label>
+</div>
+
+<button class="button" onclick="spiest()" id="poga">Pārbaudīt</button>
+<p id="atbilde"></p>
+
+
+</div>
+</main>
+</body>
+</html>

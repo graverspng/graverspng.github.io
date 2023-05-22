@@ -1,0 +1,89 @@
+header {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+a:hover {
+    color: powderblue;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+
+main {
+    margin-top: 80px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    transition: transform 0.3s;
+
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+
+body {
+    background-image: linear-gradient(to right, blue , cyan);
+    margin-top: 120px;
+}
+
+h1, h2 , P {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+.sakums:hover {
+    transform: translate(4px);
+}
+
+.phouto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.phooto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+
+  button {
+    margin: auto;
+    border-radius: 6px;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: black;
+}
+
+.linkcolor {
+    color: blue;
+}
+
+.bildite {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

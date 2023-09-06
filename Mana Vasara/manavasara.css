@@ -1,0 +1,148 @@
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+h1, h2 {
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+        background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 240px auto;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.box {
+    width: calc(33.33% - 30px); 
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 300px; 
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.pcbuild2{
+    width:200px;
+    height:400px;
+    transform: rotate(-90deg);
+    border-radius: 20px;
+}
+
+.pcbuild{
+    width:300px;
+    height:550px;
+    border-radius: 20px;
+}
+
+.poland {
+    width:400px;
+    height:350px;
+    border-radius: 20px;
+}
+
+.poland2 {
+    width:300px;
+    height:550px;
+    border-radius: 20px;
+}
+
+.valorant {
+    width:370px;
+    height:550px;
+    border-radius: 20px;
+}
+
+.valorant2 {
+    width:350px;
+    height:550px;
+    border-radius: 20px;
+}
+
+.work {
+    width:350px;
+    height:550px;
+    border-radius: 20px;
+}
+
+.work2 {
+    width:350px;
+    height:550px;
+    border-radius: 20px;
+}
